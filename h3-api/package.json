@@ -1,0 +1,22 @@
+{
+  "name": "api-thang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "listhen ./app.ts",
+    "dev": "listhen -w ./app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.2.0",
+    "h3": "^1.8.1",
+    "listhen": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.0",
+    "prisma": "^5.2.0"
+  }
+}
