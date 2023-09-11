@@ -7,14 +7,12 @@ console.log({x});
 
 ```
 
-::card
-The content of the card
-::
 
 
 ::hero
+
 Default slot text
 
-#description
-This will be rendered inside the `description` slot.
+#content
+This will be rendered inside the `content` slot.
 ::

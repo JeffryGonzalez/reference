@@ -3,7 +3,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/eslint-module',
-    '@nuxt/content'
-  ]
+    '@nuxtjs/eslint-module'
+  ],
+  eslint: {
+    lintOnStart: false
+  },
+  devServer: {
+    port: 3008
+  }
 })

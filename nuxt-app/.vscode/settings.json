@@ -11,4 +11,5 @@
       "vue"
     ],
     "eslint.format.enable": true,
+    
   }
