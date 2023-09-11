@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   ],
   devtools: { enabled: true },
   modules: [
-
+    '@nuxtjs/color-mode',
     '@nuxtjs/eslint-module'
   ],
   eslint: {
