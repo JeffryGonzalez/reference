@@ -1,8 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  css: [
+    '@/assets/css/main.css'
+  ],
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss',
+
     '@nuxtjs/eslint-module'
   ],
   eslint: {
@@ -10,5 +13,11 @@ export default defineNuxtConfig({
   },
   devServer: {
     port: 3008
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {}
+    }
   }
 })
