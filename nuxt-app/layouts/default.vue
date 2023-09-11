@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto">
+  <section>
     <header>
       <ColorMode />
     </header>
@@ -7,3 +7,10 @@
     <slot />
   </section>
 </template>
+<script setup>
+useHead({
+  bodyAttrs: {
+    class: 'bg-slate-10 dark:bg-slate-900'
+  }
+})
+</script>

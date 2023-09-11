@@ -11,5 +11,6 @@
       "vue"
     ],
     "eslint.format.enable": true,
+    "editor.minimap.enabled": false
     
   }
