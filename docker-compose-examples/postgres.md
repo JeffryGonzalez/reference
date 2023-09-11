@@ -1,6 +1,8 @@
 
 ## Postgres with Data Volume
 
+## No Adminer
+
 ```yaml
 services:
   db:
@@ -33,6 +35,8 @@ services:
     restart: always
     ports:
       - 8080:8080
+    environment:
+      ADMINER_DESIGN: dracula
 
 volumes:
   db_data:
