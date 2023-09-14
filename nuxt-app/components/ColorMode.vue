@@ -15,8 +15,8 @@ const isDark = computed({
   <ClientOnly>
     <Button
 
-      class="dark:text-slate-100  text-slate-900"
       aria-label="Theme"
+      class="dark:text-white text-white"
       @click="isDark = !isDark"
     >
       <IconsMoon v-if="isDark" />

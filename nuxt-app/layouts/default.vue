@@ -1,9 +1,6 @@
 <template>
   <section class="container mx-auto text-black dark:text-white">
-    <div>
-      <ColorMode />
-    </div>
-
+    <ContentHeader />
     <slot />
   </section>
 </template>
