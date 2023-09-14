@@ -1,5 +1,5 @@
 <template>
-  <section class="p-6 mt-8 border bg-white dark:bg-black dark:border-gray-700 rounded">
+  <section class="p-6 mt-8 border dark:border-gray-700 rounded">
     <h1 class="text-4xl">
       <slot />
     </h1>
