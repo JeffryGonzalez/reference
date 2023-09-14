@@ -3,6 +3,17 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css'
   ],
+  app: {
+    layoutTransition: { name: 'layout', mode: 'out-in' },
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in',
+      duration: {
+        enter: 300,
+        leave: 100
+      }
+    }
+  },
   devtools: {
     enabled: true,
 
