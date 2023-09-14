@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css'
   ],
+  imports: {
+    dirs: ['stores']
+  },
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' },
     pageTransition: {
@@ -23,11 +26,16 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/color-mode',
-
+    '@pinia/nuxt',
     '@nuxtjs/eslint-module',
     'nuxt-icon'
 
   ],
+  pinia: {
+    autoImports: [
+      'defineStore', 'acceptHMRUpdate'
+    ]
+  },
   eslint: {
     lintOnStart: false
   },

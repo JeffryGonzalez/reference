@@ -58,9 +58,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 import { ref } from 'vue';
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
+  { name: 'Pinia State Management', href: '/state' },
+
   { name: 'Company', href: '/about' }
 ]
 
