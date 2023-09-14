@@ -6,8 +6,12 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/color-mode',
+<<<<<<< HEAD
     '@nuxtjs/eslint-module',
     'nuxt-icon'
+=======
+    '@nuxtjs/eslint-module'
+>>>>>>> b1ded28 (set)
   ],
   eslint: {
     lintOnStart: false
