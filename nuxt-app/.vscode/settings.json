@@ -11,10 +11,8 @@
       "vue"
     ],
     "eslint.format.enable": true,
-<<<<<<< HEAD
-    "editor.minimap.enabled": false
-=======
-    "nuxt.isNuxtApp": false,
->>>>>>> b1ded28 (set)
+
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 19
     
   }
