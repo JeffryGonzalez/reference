@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <h1>
-      Welcome to the Machine My Son
-    </h1>
-  </div>
+  <ContentHero>
+    Nuxt Demo
+    <template #content>
+      <p>This is a demo site for stuff I learn about Nuxt.</p>
+    </template>
+  </ContentHero>
 </template>
