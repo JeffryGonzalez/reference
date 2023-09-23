@@ -12,7 +12,10 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('daisyui')
   ],
-  darkMode: 'class'
+  daisyui: {
+    themes: ['dracula', 'cupcake']
+  }
 }

@@ -8,26 +8,26 @@ const { increment, decrement, setCountBy } = countStore;
   <div>
     <h1>State Stuff</h1>
     <div class="flex flex-row items-baseline">
-      <button :disabled="isAtBeginning" class="border-3 p-4 bg-slate-600 m-4 disabled:bg-slate-400" @click="decrement">
+      <UiButton intent="secondary" :disabled="isAtBeginning" @click="decrement">
         -
-      </button>
+      </UiButton>
       <p class="text-3xl">
         {{ current }}
       </p>
-      <button class="border-3 p-4 bg-slate-600 m-4" @click="increment">
+      <UiButton class="border-3 p-4 bg-slate-600 m-4" @click="increment">
         +
-      </button>
+      </UiButton>
     </div>
     <div>
-      <button :disabled="by === 1" class="border-3 p-4 bg-slate-600 m-4  disabled:bg-slate-400" @click="setCountBy(1)">
+      <UiButton :disabled="by === 1" @click="setCountBy(1)">
         Count By 1
-      </button>
-      <button :disabled="by === 3" class="border-3 p-4 bg-slate-600 m-4  disabled:bg-slate-400" @click="setCountBy(3)">
+      </UiButton>
+      <UiButton :disabled="by === 3" @click="setCountBy(3)">
         Count By 3
-      </button>
-      <button :disabled="by === 5" class="border-3 p-4 bg-slate-600 m-4  disabled:bg-slate-400" @click="setCountBy(5)">
+      </UiButton>
+      <UiButton :disabled="by === 5" @click="setCountBy(5)">
         Count By 5
-      </button>
+      </UiButton>
     </div>
   </div>
 </template>

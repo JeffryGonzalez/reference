@@ -1,8 +1,4 @@
-type TodoItem = {
-    id: string,
-    description: string;
-    completed: boolean
-}
+import { TodoItem } from '@/models'
 
 type TodosState = {
     todos: TodoItem[]
@@ -15,11 +11,24 @@ export const useTodosStore = defineStore({
       todos: []
     }
   },
+  getters: {
+    empty: state => state.todos.length === 0
+  },
   actions: {
     add (item:Pick<TodoItem, 'description'>) {
-      const itemToAdd:TodoItem = { id: '99', completed: false, ...item };
+      const id = getUniqueId();
+      const itemToAdd:TodoItem = { id, completed: false, ...item };
       this.todos = [itemToAdd, ...this.todos]
+    },
+    toggleComplete (item:TodoItem) {
+      const ts = [...this.todos];
+      const i = ts.find(t => t.id === item.id);
+      if (i) {
+        i.completed = !i.completed;
+      }
+      this.todos = [...ts]
     }
+
   }
 })
 

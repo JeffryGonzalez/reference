@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['stores']
   },
+
   app: {
     layoutTransition: { name: 'layout', mode: 'out-in' },
     pageTransition: {
