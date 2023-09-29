@@ -1,4 +1,5 @@
 <script setup>
+
 const colorMode = useColorMode()
 
 const isDark = computed({
@@ -13,7 +14,7 @@ const isDark = computed({
 
 <template>
   <ClientOnly>
-    <Button
+    <button
 
       aria-label="Theme"
       class="dark:text-white text-white"
@@ -21,7 +22,7 @@ const isDark = computed({
     >
       <IconsMoon v-if="isDark" />
       <IconsSun v-else />
-    </Button>
+    </button>
 
     <template #fallback>
       <div class="w-8 h-8" />
