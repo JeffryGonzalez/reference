@@ -10,11 +10,11 @@ public class Basics
     public void BasicMapping()
     {
         DateTime when = new(1969, 4, 20);
-        Car car = new() { Make = "Ford", Model = "Bronco", Manufactured = when };
+        Car car = new() { Make = "Ford", Model = "Mustang", Manufactured = when };
         CarDto dto = car.MapCarToCarDto();
         dto.Make.Should().Be("Ford");
         dto.Year.Should().Be(1969);
-        dto.Summary.Should().Be("Ford Bronco from 1969");
+        dto.Summary.Should().Be("Ford Mustang from 1969");
     }
 }
 
