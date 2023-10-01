@@ -1,8 +1,8 @@
 services:
   db:
-    image: postgres:15.2-bullseye
+    image: jeffrygonzalez/pg-thing:v2
     environment:
-      POSTGRES_PASSWORD: password
+      PGDATA: /pgdata
     ports:
       - 5439:5432
   adminer:
