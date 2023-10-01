@@ -1,0 +1,21 @@
+services:
+  db:
+    # image: postgres:15.2-bullseye
+    image: jeffrygonzalez/pg-thing:v2
+    environment:
+      # POSTGRES_PASSWORD: password
+      PGDATA: /pgdata
+    ports:
+      - 5439:5432
+    # volumes:
+    #   - db_data:/var/lib/postgresql/data
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8090:8080
+    environment:
+      ADMINER_DESIGN: dracula
+
+volumes:
+  db_data:
