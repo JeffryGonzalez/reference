@@ -28,3 +28,11 @@ docker commit dev-environment-db-1
 docker images
 docker tag ead6ebe65277 jeffrygonzalez/pg-thing:v2
 ```
+
+## The JWT Thing
+
+In the API Directory
+
+```shell
+dotnet user-jwts create
+```

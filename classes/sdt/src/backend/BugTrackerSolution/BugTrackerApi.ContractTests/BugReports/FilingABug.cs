@@ -1,11 +1,13 @@
 ﻿using Alba;
-
+using BugTrackerApi.ContractTests.Fixtures;
 using BugTrackerApi.Models;
 
 using Microsoft.Net.Http.Headers;
 
 namespace BugTrackerApi.ContractTests.BugReports;
-public class FilingABug : IClassFixture<FilingABugFixture>
+[Collection("happy path")]
+public class FilingABug 
+
 {
     private readonly IAlbaHost _host;
 

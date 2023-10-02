@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <PackageOutputPath>C:\Users\enith\dev\class\sdt\src\libs</PackageOutputPath>
+    <PackageOutputPath>.</PackageOutputPath>
       <Version>1.1.0</Version>
   </PropertyGroup>
 

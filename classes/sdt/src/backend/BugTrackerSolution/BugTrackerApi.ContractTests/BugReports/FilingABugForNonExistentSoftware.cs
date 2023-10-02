@@ -1,9 +1,10 @@
 ﻿using Alba;
-
+using BugTrackerApi.ContractTests.Fixtures;
 using BugTrackerApi.Models;
 
 namespace BugTrackerApi.ContractTests.BugReports;
-public class FilingABugForNonExistentSoftware : IClassFixture<FilingABugFixture>
+[Collection("happy path")]
+public class FilingABugForNonExistentSoftware
 {
     private readonly IAlbaHost _host;
     public FilingABugForNonExistentSoftware(FilingABugFixture fixture)
@@ -19,7 +20,7 @@ public class FilingABugForNonExistentSoftware : IClassFixture<FilingABugFixture>
             Description = "Thing done blown up",
             Narrative = "When I click the do-dad, the whizzer blinkers"
         };
-        IScenarioResult response = await _host.Scenario(api =>
+        var response = await _host.Scenario(api =>
         {
             api.Post.Json(request).ToUrl("/catalog/not-there/bugs");
             api.StatusCodeShouldBe(404);

@@ -1,8 +1,12 @@
-﻿namespace BugTrackerApi.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
-public record BugReportCreateRequest
-{
+namespace BugTrackerApi.Models;
+
+public record BugReportCreateRequest {
+
+    [Required, MaxLength(200)]
     public string Description { get; set; } = string.Empty;
+[Required]
     public string Narrative { get; set; } = string.Empty;
 }
 

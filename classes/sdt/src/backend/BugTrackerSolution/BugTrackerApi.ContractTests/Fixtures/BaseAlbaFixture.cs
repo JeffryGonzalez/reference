@@ -1,11 +1,9 @@
 ﻿using Alba;
 using Alba.Security;
-
 using Microsoft.Extensions.DependencyInjection;
-
 using Testcontainers.PostgreSql;
 
-namespace BugTrackerApi.ContractTests;
+namespace BugTrackerApi.ContractTests.Fixtures;
 public abstract class BaseAlbaFixture : IAsyncLifetime
 {
     private readonly string PG_IMAGE = "postgres:15.2-bullseye";
