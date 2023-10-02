@@ -32,6 +32,7 @@ docker tag ead6ebe65277 jeffrygonzalez/pg-thing:v2
 ```
 
 ## The JWT Thing
+More in [[jwt]]
 
 In the API Directory
 

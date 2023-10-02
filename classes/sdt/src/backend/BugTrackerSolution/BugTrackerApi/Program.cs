@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+
 using BugTrackerApi.Services;
 
 using Marten;
@@ -11,7 +12,7 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
-    
+
     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
