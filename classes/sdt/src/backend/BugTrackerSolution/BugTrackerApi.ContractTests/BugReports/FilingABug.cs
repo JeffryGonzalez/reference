@@ -45,6 +45,7 @@ public class FilingABug
         Assert.Equal(body, body2);
     }
 
+    
     public static IEnumerable<object[]> GetSamples()
     {
         BugReportCreateRequest request1 = new()
