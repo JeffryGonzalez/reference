@@ -1,5 +1,5 @@
 ﻿using Alba.Security;
-
+using BugTrackerApi.ContractTests.Fixtures;
 using BugTrackerApi.Services;
 
 using Microsoft.Extensions.DependencyInjection;
@@ -26,3 +26,7 @@ public class FilingABugFixture : BaseAlbaFixture
         return base.GetStub().WithName("carl");
     }
 }
+
+
+[CollectionDefinition("happy path")]
+public class HappyPathFixture : ICollectionFixture<FilingABugFixture> {}

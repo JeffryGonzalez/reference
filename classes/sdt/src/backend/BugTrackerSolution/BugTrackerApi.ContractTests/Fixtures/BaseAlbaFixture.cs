@@ -8,10 +8,11 @@ using Testcontainers.PostgreSql;
 namespace BugTrackerApi.ContractTests;
 public abstract class BaseAlbaFixture : IAsyncLifetime
 {
-    //private readonly string PG_IMAGE = "postgres:15.2-bullseye";
-    private readonly string PG_IMAGE = "jeffrygonzalez/pg-thing:v2";
+    private readonly string PG_IMAGE = "postgres:15.2-bullseye";
+    // private readonly string PG_IMAGE = "jeffrygonzalez/pg-thing:v2";
     private readonly PostgreSqlContainer _pgContainer;
-    public BaseAlbaFixture()
+
+    protected BaseAlbaFixture()
     {
         _pgContainer = new PostgreSqlBuilder()
             .WithUsername("postgres")
