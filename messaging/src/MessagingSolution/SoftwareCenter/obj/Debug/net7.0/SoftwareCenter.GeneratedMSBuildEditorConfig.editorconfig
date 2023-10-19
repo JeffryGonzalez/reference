@@ -26,8 +26,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\enith\dev\reference\messaging\src\MessagingSolution\SoftwareCenter
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Catalog/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ1xJbmRleC5jc2h0bWw=
+[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Catalog/Techs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ1xUZWNoc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Error.cshtml]
