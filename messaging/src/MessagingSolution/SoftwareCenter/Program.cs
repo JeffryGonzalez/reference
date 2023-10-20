@@ -1,7 +1,7 @@
 using Marten;
-
+using Marten.Events.Projections;
 using Oakton.Resources;
-
+using SoftwareCenter.Handlers;
 using Wolverine;
 using Wolverine.Kafka;
 using Wolverine.Marten;
@@ -29,6 +29,9 @@ var kafkaConnectionString = builder.Configuration.GetConnectionString("kafka") ?
 var marten = builder.Services.AddMarten(opts =>
 {
     opts.Connection(databaseConnectionString);
+    opts.Projections.Snapshot<Tech>(SnapshotLifecycle.Inline);
+    opts.Projections.Snapshot<Vendor>(SnapshotLifecycle.Inline);
+    opts.Projections.Snapshot<SoftwareTitle>(SnapshotLifecycle.Inline);
     if (builder.Environment.IsDevelopment())
     {
         opts.AutoCreateSchemaObjects = Weasel.Core.AutoCreate.All;
@@ -46,6 +49,7 @@ builder.Host.UseWolverine(options =>
     options.Services.AddResourceSetupOnStartup();
     options.Policies.AutoApplyTransactions();
     options.UseKafka(kafkaConnectionString);
+    
 });
 var app = builder.Build();
 

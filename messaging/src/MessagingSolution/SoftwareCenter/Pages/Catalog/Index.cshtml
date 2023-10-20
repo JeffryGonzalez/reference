@@ -1,0 +1,30 @@
+@page
+@model SoftwareCenter.Pages.Catalog.Index
+
+
+<h2>Software Catalog</h2>
+<ul class="list-unstyled">
+@foreach (var title in Model.Titles)
+{
+    <li class="card">
+        <div class="card-header">@title.Title</div>
+        <div class="card-body">
+            @if (title.Vendor is null)
+            {
+                <form method="post" asp-page-handler="Vendor">
+                    <p>Add A Vendor</p>
+                </form>
+            }
+        </div>
+    </li>
+}
+</ul>
+<section>
+    <form method="post" asp-page-handler="Title">
+        <div class="form-group">
+            <label asp-for="TitleName"></label>
+            <input asp-for="TitleName" class="form-control"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Title</button>
+    </form>
+</section>

@@ -1,5 +1,4 @@
-﻿using Marten.Events.Projections;
-
+﻿using Marten;
 using SoftwareCenter.Commands;
 using SoftwareCenter.Events;
 
@@ -7,26 +6,26 @@ namespace SoftwareCenter.Handlers;
 
 public class TechHandler
 {
-    public TechCreated Handle(TechOwnerCommand.CreateSupportTech command)
+    public TechCreated Handle(TechOwnerCommand.CreateSupportTech command, IDocumentSession session)
     {
-        return new TechCreated(Guid.NewGuid(), command.Name, command.EmailAddress);
+        var @event =  new TechCreated(Guid.NewGuid(), command.Name, command.EmailAddress);
+         session.Events.Append(@event.Id, @event);
+        return @event;
     }
 }
 
 
-public class TechSummary
+public class Tech
 {
     public Guid Id { get; set; }
-    public List<TechModel> Techs { get; set; } = new();
-    public record TechModel(Guid Id, string Name, string EmailAddress);
-}
+    public string Name { get; set; } = string.Empty;
+    public string EmailAddress { get; set; } = string.Empty;
 
-public class TechSummaryProjection : MultiStreamProjection<TechSummary, Guid>
-{
-    public Guid Id { get; set; } = Constants.TechsStream;
-
-    public void Apply(TechCreated @event, TechSummary view)
+    public void Apply(TechCreated @event, Tech view)
     {
-        view.Techs.Add(new TechSummary.TechModel(@event.Id, @event.Name, @event.EmailAddress));
-    }
+        view.Id = @event.Id;
+        view.Name = @event.Name;
+        view.EmailAddress = @event.EmailAddress;
+    } 
 }
+

@@ -1,8 +1,21 @@
 ﻿@page
 @model SoftwareCenter.Pages.Catalog.Techs.IndexModel
 @{
+    
 }
 
+@if (Model.Techs is not null)
+{
+    <p>Some Techs</p>
+        <ul class="list-group list-group-flush">
+    @foreach (var tech in Model.Techs)
+    {
+            <li class="list-group-item">@tech.Name</li>
+       
+    }
+        </ul>
+}
+        
 <div>
     <form method="post">
         <div class="form-group">

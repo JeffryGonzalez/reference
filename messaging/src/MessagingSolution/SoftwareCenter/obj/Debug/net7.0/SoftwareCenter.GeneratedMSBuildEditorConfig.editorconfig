@@ -17,43 +17,49 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SoftwareCenter
 build_property.RootNamespace = SoftwareCenter
-build_property.ProjectDir = C:\Users\enith\dev\reference\messaging\src\MessagingSolution\SoftwareCenter\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = /home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\enith\dev\reference\messaging\src\MessagingSolution\SoftwareCenter
+build_property.MSBuildProjectDirectory = /home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Catalog/Techs/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0YWxvZ1xUZWNoc1xJbmRleC5jc2h0bWw=
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Catalog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0YWxvZy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Catalog/Techs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0YWxvZy9UZWNocy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Catalog/Vendors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0YWxvZy9WZW5kb3JzL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/enith/dev/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-bo0lthxglm
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jeffrygonzalez/work/reference/messaging/src/MessagingSolution/SoftwareCenter/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gllscdp1zk

@@ -1,0 +1,23 @@
+@page
+@model SoftwareCenter.Pages.Catalog.Vendors.Index
+
+
+
+<h2>Software Vendors</h2>
+        <ul class="list-group list-group-flush">
+    @foreach (var vendor in Model.Vendors)
+    {
+            <li class="list-group-item">@vendor.Name</li>
+       
+    }
+        </ul>
+
+<section>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="VendorName"></label>
+            <input type="text" asp-for="VendorName" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Vendor</button>
+    </form>
+</section>

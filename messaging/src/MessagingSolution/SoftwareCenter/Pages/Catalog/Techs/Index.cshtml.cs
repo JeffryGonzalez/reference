@@ -1,8 +1,8 @@
 using Marten;
-
+using Marten.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
+using SoftwareCenter.Events;
 using SoftwareCenter.Handlers;
 
 using Wolverine;
@@ -25,15 +25,15 @@ public class IndexModel : PageModel
     [BindProperty]
     public TechModel TechModel { get; set; } = new();
 
-    public TechSummary Techs { get; set; } = new();
-    public async void OnGetAsync()
+    public IReadOnlyList<Tech>? Techs { get; set; }
+    public async Task OnGetAsync()
     {
-        Techs = await _session.Events.AggregateStreamAsync<>
+        Techs = await _session.Query<Tech>().ToListAsync();
     }
 
     public async Task<IActionResult> OnPostAsync()
     {
-        await _bus.PublishAsync(TechModel.ToCommand());
+        await _bus.InvokeAsync(TechModel.ToCommand());
         return RedirectToPage();
     }
 }
