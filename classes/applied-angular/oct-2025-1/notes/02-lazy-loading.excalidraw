@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "nLXBnOyBu_d2__GGdwHCP",
+      "type": "text",
+      "x": 282,
+      "y": 206,
+      "width": 819.7794189453125,
+      "height": 225,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 3476075,
+      "version": 373,
+      "versionNonce": 2141767659,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1759780982733,
+      "link": null,
+      "locked": false,
+      "text": "We should be vicious about breaking our application into multiple JavaScript \"chunks\"\n    - Chunks are separate from the main.js\n\n\nThree Ways to do this in \"modern\" angular\n    - For \"routed features\" lazy load the routes.\n    - For components, lazy load the component\n    - For portions of a component, use the @defer template directive.\n",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "We should be vicious about breaking our application into multiple JavaScript \"chunks\"\n    - Chunks are separate from the main.js\n\n\nThree Ways to do this in \"modern\" angular\n    - For \"routed features\" lazy load the routes.\n    - For components, lazy load the component\n    - For portions of a component, use the @defer template directive.\n",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
